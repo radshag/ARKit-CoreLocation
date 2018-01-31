@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/ProjectDent/arkit-corelocation"
   s.author       = { "Andrew Hart" => "Andrew@ProjectDent.com" }
   s.license      = { :type => 'MIT', :file => 'LICENSE'  }
-  s.source       = { :git => "https://ProjectDent@github.com/ProjectDent/ARKit-CoreLocation.git", :tag => s.version.to_s, :submodules => false }
+  s.source       = { :git => "https://radshag@github.com/radshag/ARKit-CoreLocation.git", :tag => s.version.to_s, :submodules => false }
   s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.source_files = 'ARKit+CoreLocation/Source/*.swift'
