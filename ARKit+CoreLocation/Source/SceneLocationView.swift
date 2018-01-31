@@ -56,7 +56,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
     
     private(set) var locationNodes = [LocationNode]()
 	
-    public private(set) var heading:   UInt = 0
+    public private(set) var heading:   CLLocationDirection = 0
     
     private var sceneLocationEstimates = [SceneLocationEstimate]()
     
@@ -500,6 +500,6 @@ extension SceneLocationView: LocationManagerDelegate {
     }
     
     func locationManagerDidUpdateHeading(_ locationManager: LocationManager, heading: CLLocationDirection, accuracy: CLLocationAccuracy) {
-        heading = heading
+        self.heading = heading
     }
 }
